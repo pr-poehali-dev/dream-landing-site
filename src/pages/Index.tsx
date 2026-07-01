@@ -110,31 +110,42 @@ const Index = () => {
         <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.1s' }}>
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white/5 px-5 py-2 text-xs uppercase tracking-[0.3em] text-gold backdrop-blur-sm">
             <Icon name="Sparkles" size={14} />
-            Курс исполнения желаний
+            Тайные знания доступны сейчас
           </div>
         </div>
 
         <h1
-          className="animate-fade-in-up mb-6 max-w-4xl font-display text-6xl font-600 italic leading-none text-shadow-gold opacity-0 sm:text-7xl md:text-8xl"
+          className="animate-fade-in-up mb-4 max-w-4xl font-display text-6xl font-600 italic leading-none text-shadow-gold opacity-0 sm:text-7xl md:text-8xl"
           style={{ animationDelay: '0.3s' }}
         >
           Я хочу<span className="text-gold">...</span>
         </h1>
 
         <p
-          className="animate-fade-in-up mb-4 max-w-xl font-display text-2xl font-500 text-gold-light/90 opacity-0 sm:text-3xl"
+          className="animate-fade-in-up mb-8 max-w-xl font-display text-2xl font-500 italic text-gold-light/90 opacity-0 sm:text-3xl"
           style={{ animationDelay: '0.5s' }}
         >
-          Пробуди в себе древнюю силу — и Вселенная услышит твой замысел
+          Пошаговый практикующий курс по исполнению твоих желаний
         </p>
 
-        <p
-          className="animate-fade-in-up mb-12 max-w-md text-sm leading-relaxed text-gold-light/60 opacity-0"
+        <div
+          className="animate-fade-in-up mb-12 max-w-xl space-y-4 text-sm leading-relaxed text-gold-light/70 opacity-0 sm:text-base"
           style={{ animationDelay: '0.65s' }}
         >
-          Магия, тайна и состояние чуда. Всё, чтобы твои желания начали
-          сбываться быстрее, чем ты думаешь.
-        </p>
+          <p>
+            Чувствуешь, как мгновения ускользают сквозь пальцы? Если ты не
+            сделаешь этот шаг сейчас, твоя мечта так и останется призраком в ночи.
+          </p>
+          <p className="font-display text-lg italic text-gold-light/90 sm:text-xl">
+            Мир — это зеркало твоих глубинных убеждений. Твои желания не просто
+            мечты, это архитектура твоей новой жизни.
+          </p>
+          <p>
+            Не занимайся визуализацией ради надежды. Познай проверенные
+            инструменты влияния на событийный ряд. Ты начнёшь притягивать ресурсы
+            и обстоятельства так, словно сама Вселенная ждала твоей команды.
+          </p>
+        </div>
 
         {/* Кнопки */}
         <div
