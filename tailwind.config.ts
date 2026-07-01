@@ -18,7 +18,21 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				display: ['"Cormorant Garamond"', 'serif'],
+				body: ['"Golos Text"', 'sans-serif'],
+			},
 			colors: {
+				night: {
+					DEFAULT: '#0a0e2a',
+					deep: '#050718',
+				},
+				royal: '#2a1a5e',
+				violet: '#7b52d0',
+				gold: {
+					DEFAULT: '#e8c15a',
+					light: '#f7e3a1',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -84,11 +98,31 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in-up': {
+					'0%': { opacity: '0', transform: 'translateY(30px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'glow-pulse': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(232,193,90,0.4), 0 0 40px rgba(123,82,208,0.2)' },
+					'50%': { boxShadow: '0 0 35px rgba(232,193,90,0.7), 0 0 70px rgba(123,82,208,0.4)' }
+				},
+				'twinkle': {
+					'0%, 100%': { opacity: '0.2' },
+					'50%': { opacity: '1' }
+				},
+				'float-slow': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-12px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in-up': 'fade-in-up 1s ease-out forwards',
+				'glow-pulse': 'glow-pulse 3s ease-in-out infinite',
+				'twinkle': 'twinkle 3s ease-in-out infinite',
+				'float-slow': 'float-slow 6s ease-in-out infinite'
 			}
 		}
 	},

@@ -99,3 +99,84 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* ==== Ночное небо: звёзды и метеоритный дождь ==== */
+.night-sky {
+  background:
+    radial-gradient(ellipse at 50% 0%, #1a1550 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 90%, #2a1a5e 0%, transparent 55%),
+    linear-gradient(180deg, #050718 0%, #0a0e2a 50%, #060820 100%);
+}
+
+.stars {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Метеориты */
+.meteor {
+  position: absolute;
+  top: -10%;
+  width: 2px;
+  height: 2px;
+  background: linear-gradient(45deg, #f7e3a1, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 6px 1px rgba(247, 227, 161, 0.7);
+  animation: meteor-fall linear infinite;
+}
+
+.meteor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(247, 227, 161, 0.8), transparent);
+  transform: translateX(-140px) rotate(0deg);
+  transform-origin: right;
+}
+
+@keyframes meteor-fall {
+  0% {
+    transform: translate(0, 0) rotate(215deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-120vw, 120vh) rotate(215deg);
+    opacity: 0;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.text-shadow-gold {
+  text-shadow:
+    0 0 30px rgba(232, 193, 90, 0.5),
+    0 2px 20px rgba(0, 0, 0, 0.6);
+}
