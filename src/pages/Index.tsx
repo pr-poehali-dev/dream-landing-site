@@ -182,15 +182,6 @@ const Index = () => {
 
       {/* Футер */}
       <footer className="relative z-10 pb-8 text-center text-xs text-gold-light/50">
-        <div className="mb-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-          <a href="/privacy" className="transition-colors hover:text-gold">
-            Политика конфиденциальности
-          </a>
-          <span className="hidden sm:inline text-gold-light/20">•</span>
-          <a href="/terms" className="transition-colors hover:text-gold">
-            Условия предоставления услуг
-          </a>
-        </div>
         <p className="text-gold-light/40">
           Контакты:{' '}
           <a
