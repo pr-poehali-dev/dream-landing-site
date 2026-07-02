@@ -187,7 +187,7 @@ const Index = () => {
             Политика конфиденциальности
           </a>
           <span className="text-gold-light/20">•</span>
-          <a href="https://disk.yandex.ru/i/kip8oPMLGkXLVA" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">
+          <a href="https://cdn.poehali.dev/projects/367338d0-0330-4f92-a349-8653c9326a6f/bucket/c9a7365d-40ee-411d-820c-7367aa90e62b.pdf" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">
             Оферта
           </a>
         </div>
