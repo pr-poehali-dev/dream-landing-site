@@ -183,7 +183,7 @@ const Index = () => {
       {/* Футер */}
       <footer className="relative z-10 pb-8 text-center text-xs text-gold-light/50">
         <div className="mb-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-          <a href="https://disk.yandex.ru/i/s8CsdUmQT2ZbPQ" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">
+          <a href="https://cdn.poehali.dev/projects/367338d0-0330-4f92-a349-8653c9326a6f/bucket/1c266fae-958a-4e73-92b6-62f26f545ed1.pdf" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gold">
             Политика конфиденциальности
           </a>
           <span className="text-gold-light/20">•</span>
