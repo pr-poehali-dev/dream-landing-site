@@ -188,7 +188,7 @@ const Index = () => {
             Политика конфиденциальности
           </a>
           <span className="text-gold-light/40">•</span>
-          <a href="https://cdn.poehali.dev/projects/367338d0-0330-4f92-a349-8653c9326a6f/bucket/69aca0bf-d2d5-4b9c-ad2a-780d5c5bca2b.pdf" target="_blank" rel="noopener noreferrer" className="text-gold-light/70 underline transition-colors hover:text-gold">
+          <a href="https://cdn.poehali.dev/projects/367338d0-0330-4f92-a349-8653c9326a6f/bucket/94214d4a-720e-46aa-867c-463f291abfc3.pdf" target="_blank" rel="noopener noreferrer" className="text-gold-light/70 underline transition-colors hover:text-gold">
             Оферта
           </a>
         </div>
