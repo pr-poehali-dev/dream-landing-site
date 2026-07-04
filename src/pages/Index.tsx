@@ -205,6 +205,9 @@ const Index = () => {
             infomagz25@gmail.com
           </a>
         </p>
+        <p className="mt-1 text-gold-light/40">
+          Самозанятой Милюхина Светлана Николаевна ИНН 420403054958
+        </p>
       </footer>
     </div>
   );
