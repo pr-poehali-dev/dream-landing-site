@@ -188,7 +188,7 @@ const Index = () => {
         >
           <a
             href="https://pro.selfwork.ru/kassa/kyrs_hochu"
-            className="animate-glow-pulse group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-2xl bg-gradient-to-r from-gold to-gold-light px-8 py-5 font-body text-lg font-700 uppercase tracking-wider text-night-deep transition-transform hover:scale-[1.03]"
+            className="animate-strobe group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-2xl bg-gradient-to-r from-gold to-gold-light px-8 py-5 font-body text-lg font-700 uppercase tracking-wider text-night-deep transition-transform hover:scale-[1.03]"
           >
             <Icon name="Flame" size={22} />
             ПОЛУЧИТЬ ДОСТУП
