@@ -70,6 +70,22 @@ const Index = () => {
     [],
   );
 
+  const fogClouds = useMemo(
+    () =>
+      Array.from({ length: 6 }).map((_, i) => {
+        const size = Math.random() * 260 + 220;
+        return {
+          id: i,
+          top: `${Math.random() * 90}%`,
+          width: `${size}px`,
+          height: `${size * 0.5}px`,
+          animationDelay: `${Math.random() * 20}s`,
+          animationDuration: `${Math.random() * 20 + 30}s`,
+        };
+      }),
+    [],
+  );
+
   return (
     <div className="relative min-h-screen overflow-hidden night-sky font-body text-gold-light">
       {/* Звёзды */}
@@ -104,6 +120,23 @@ const Index = () => {
 
       {/* Лунное свечение */}
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-violet/20 blur-[120px]" />
+
+      {/* Летающая дымка */}
+      <div className="fog-layer">
+        {fogClouds.map((f) => (
+          <span
+            key={f.id}
+            className="fog"
+            style={{
+              top: f.top,
+              width: f.width,
+              height: f.height,
+              animationDelay: f.animationDelay,
+              animationDuration: f.animationDuration,
+            }}
+          />
+        ))}
+      </div>
 
       {/* Контент */}
       <main className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-20 text-center">
